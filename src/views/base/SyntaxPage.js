@@ -1,6 +1,6 @@
 import logo from "../../logo.svg"
 import styles from './index.module.css'
-export default function Syntax() {
+export default function SyntaxPage() {
   const name = "React";
   const obj = {
     firstName: 'li',

@@ -1,10 +1,16 @@
 import './App.css';
-import Syntax from './views/base/syntax';
+// import SyntaxPage from "./views/base/SyntaxPage";
+// import ClassComponent from './views/base/ClassComponent';
+// import FunctionComponent from './views/base/FunctionComponent';
+import SetStatePage from './views/base/SetStatePage';
 
 function App() {
   return (
     <div className="App">
-      <Syntax />
+      {/* <SyntaxPage /> */}
+      {/* <ClassComponent /> */}
+      {/* <FunctionComponent /> */}
+      <SetStatePage />
     </div>
   );
 }

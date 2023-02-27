@@ -21,11 +21,18 @@ import { useState } from 'react';
 // import SimpleFormPage from './views/form/SimpleFormPage';
 // import RCFormPage from './views/form/RCFormPage';
 // import MyRCFormPage from './views/form/MyRCFormPage';
-import IndexPage from './views/layout/IndexPage';
-import CartPage from './views/layout/CartPage';
-import OrderListPage from './views/layout/OrderListPage';
-import UserPage from './views/layout/UserPage';
-import BottomNav from './components/BottomNav';
+// layout
+// import IndexPage from './views/layout/IndexPage';
+// import CartPage from './views/layout/CartPage';
+// import OrderListPage from './views/layout/OrderListPage';
+// import UserPage from './views/layout/UserPage';
+// import BottomNav from './components/BottomNav';
+// import ConextPage from './views/context/ConextPage';
+// import UseContextPage from './views/context/UseContextPage';
+// import AntdFormClassPage from './views/form/AntdFormClassPage';
+// import AntdFormFuncPage from './views/form/AntdFormFuncPage';
+import MyAntdFormClassPage from './views/form/MyAntdFormClassPage';
+
 
 function App() {
   const [activeNum, setActiveNum] = useState(0)
@@ -52,11 +59,17 @@ function App() {
       {/* <SimpleFormPage /> */}
       {/* <RCFormPage /> */}
       {/* <MyRCFormPage /> */}
-      {activeNum === 0 &&  <IndexPage />}
+      {/* layout */}
+      {/* {activeNum === 0 &&  <IndexPage />}
       {activeNum === 1 &&  <CartPage />}
       {activeNum === 2 &&  <OrderListPage />}
       {activeNum === 3 &&  <UserPage />}
-      <BottomNav activeNum={activeNum} setActiveNum={setActiveNum} />
+      <BottomNav activeNum={activeNum} setActiveNum={setActiveNum} /> */}
+      {/* <ConextPage /> */}
+      {/* <UseContextPage /> */}
+      {/* <AntdFormClassPage /> */}
+      {/* <AntdFormFuncPage /> */}
+      <MyAntdFormClassPage />
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Form, {Field} from 'rc-field-form'
+import Form, {Field} from '../../components/my-rc-field-form'
 import Input from '../../components/Input'
 
 const nameRules = {required: true, message: '请输入姓名'};
@@ -40,7 +40,7 @@ export default class MyAntdFormClassPage extends Component {
             <Input placeholder="password input placeholder" />
           </Field>
           <Field>
-            <button>提交</button>
+            <button type="submit">提交</button>
           </Field>
           <Field>
           <button>重置</button>

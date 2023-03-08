@@ -6,7 +6,9 @@ import { useState } from 'react';
 // import SetStatePage from './views/base/SetStatePage';
 // import HomePage from './views/component/HomePage';
 // import ReduxPage from './views/redux/ReduxPage';
-// import ReactReduxPage from './views/redux/ReactReduxPage';
+import ReactReduxPage from './views/ReactRedux/ReactReduxPage';
+// import ReactReduxHookPage from './views/ReactRedux/ReactReduxHookPage';
+// import ReactUseReducerPage from './views/ReactRedux/ReactUseReducerPage';
 // import RouterPage from './views/router/RouterPage';
 // import OutletPage from './views/router/OutletPage';
 // import PureComponentPage from './views/pureComponent/PureComponentPage';
@@ -31,7 +33,7 @@ import { useState } from 'react';
 // import UseContextPage from './views/context/UseContextPage';
 // import AntdFormClassPage from './views/form/AntdFormClassPage';
 // import AntdFormFuncPage from './views/form/AntdFormFuncPage';
-import MyAntdFormClassPage from './views/form/MyAntdFormClassPage';
+// import MyAntdFormClassPage from './views/form/MyAntdFormClassPage';
 
 
 function App() {
@@ -44,7 +46,9 @@ function App() {
       {/* <SetStatePage /> */}
       {/* <HomePage /> */}
       {/* <ReduxPage /> */}
-      {/* <ReactReduxPage /> */}
+      <ReactReduxPage />
+      {/* <ReactReduxHookPage /> */}
+      {/* <ReactUseReducerPage /> */}
       {/* <RouterPage /> */}
       {/* <OutletPage /> */}
       {/* <PureComponentPage /> */}
@@ -69,7 +73,7 @@ function App() {
       {/* <UseContextPage /> */}
       {/* <AntdFormClassPage /> */}
       {/* <AntdFormFuncPage /> */}
-      <MyAntdFormClassPage />
+      {/* <MyAntdFormClassPage /> */}
     </div>
   );
 }

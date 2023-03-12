@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Link, Routes, Route } from 'react-router-dom'
 
-export default class RouterPage extends Component {
+export default class Router6Page extends Component {
   render() {
     return (
       <div>
-        <h3>RouterPage</h3>
+        <h3>Router6Page</h3>
         <Router>
           <Link to="/">首页</Link>
           <Link to="/user">用户中心</Link>

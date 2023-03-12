@@ -6,10 +6,13 @@ import { useState } from 'react';
 // import SetStatePage from './views/base/SetStatePage';
 // import HomePage from './views/component/HomePage';
 // import ReduxPage from './views/redux/ReduxPage';
-import ReactReduxPage from './views/ReactRedux/ReactReduxPage';
+// import ReactReduxPage from './views/ReactRedux/ReactReduxPage';
 // import ReactReduxHookPage from './views/ReactRedux/ReactReduxHookPage';
 // import ReactUseReducerPage from './views/ReactRedux/ReactUseReducerPage';
-// import RouterPage from './views/router/RouterPage';
+// import Router6Page from './views/router/Router6Page';
+// import RouteComponePage from './views/router/RouteComponePage';
+// import Router5Page from './views/router/Router5Page';
+import ReactRouterPage from './views/router/ReactRouterPage';
 // import OutletPage from './views/router/OutletPage';
 // import PureComponentPage from './views/pureComponent/PureComponentPage';
 // import LifeCyclePage from './views/lifecycle/LifeCyclePage';
@@ -46,10 +49,13 @@ function App() {
       {/* <SetStatePage /> */}
       {/* <HomePage /> */}
       {/* <ReduxPage /> */}
-      <ReactReduxPage />
+      {/* <ReactReduxPage /> */}
       {/* <ReactReduxHookPage /> */}
       {/* <ReactUseReducerPage /> */}
-      {/* <RouterPage /> */}
+      {/* <Router6Page /> */}
+      {/* <Router5Page /> */}
+      <ReactRouterPage />
+      {/* <RouteComponePage /> */}
       {/* <OutletPage /> */}
       {/* <PureComponentPage /> */}
       {/* <LifeCyclePage /> */}

@@ -12,6 +12,7 @@ export const connect = (
 
   // ??
   let dispatchProps = {dispatch};
+  const [ ,forceUpdate] = useReducer(x => x + 1, 0)
 
   if (typeof mapDispatchToProps === 'function') {
     dispatchProps = mapDispatchToProps(dispatch);
@@ -19,7 +20,6 @@ export const connect = (
     dispatchProps = bindActionCreators(mapDispatchToProps, dispatch);
   }
 
-  const [ ,forceUpdate] = useReducer(x => x + 1, 0)
   useLayoutEffect(() => {
     const unsubscribe = subscribe(() => {
       forceUpdate()
@@ -34,7 +34,7 @@ export const connect = (
 }
 
 export function Provider({store, children}) {
-  <Context.Provider value={store}>{children}</Context.Provider>
+  return <Context.Provider value={store}>{children}</Context.Provider>
 }
 
 function bindActionCreator(creator, dispatch) {

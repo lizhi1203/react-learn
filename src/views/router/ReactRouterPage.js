@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Link, Switch, Route,useRouteMatch, useHistory, useLocation, useParams, withRouter } from '../../components/KReactRouterDom'
+import { BrowserRouter as Router, Link, Switch, Route, 
+  useRouteMatch, useHistory, useLocation, useParams, withRouter, Redirect, Prompt } from '../../components/KReactRouterDom'
 
 export default class ReactRouterPage extends Component {
   render() {
@@ -11,10 +12,12 @@ export default class ReactRouterPage extends Component {
           <Link to="/user">用户中心</Link>
           <Link to="/login">登录</Link>
           <Link to="/product/123">商品</Link>
+          <Link to="/welcome">欢迎</Link>
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/user" component={UserPage} />
             <Route path="/login" component={LoginPage} />
+            <Route path="/welcome" component={WelcomePage}/>
             <Route path="/product/:id" component={ProductPage} />
             <Route component={_404Page} />
           </Switch>
@@ -27,8 +30,16 @@ export default class ReactRouterPage extends Component {
 class HomePage extends Component {
   render() {
     return (
+      <Redirect to={{ pathname: '/welcome' }}/>
+    )
+  }
+}
+
+class WelcomePage extends Component {
+  render() {
+    return (
       <div>
-        <h3>HomePage</h3>
+        <h3>WelcomePage</h3>
       </div>
     )
   }
@@ -76,6 +87,7 @@ class ProductPage extends Component {
     return (
       <div>
         <h3>ProductPage-{id}</h3>
+        <Prompt when={true} message="Are you sure you want to leave?" />
         <Link to={url + '/detail'}>详情</Link>
         <Route path={url + '/detail'} component={DetailPage} />
       </div>

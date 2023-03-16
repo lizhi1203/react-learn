@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import './static/iconfont/iconfont.css';
 import App from './App';
-// import { Provider } from 'react-redux';
-import { Provider } from './components/KReactRedux/index'
+import { Provider } from 'react-redux';
+// import { Provider } from './components/KReactRedux/index'
 import store from './store';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';

@@ -12,7 +12,8 @@ import { useState } from 'react';
 // import Router6Page from './views/router/Router6Page';
 // import RouteComponePage from './views/router/RouteComponePage';
 // import Router5Page from './views/router/Router5Page';
-import ReactRouterPage from './views/router/ReactRouterPage';
+// import ReactRouterPage from './views/router/ReactRouterPage';
+import ReduxSagaPage from './views/reduxSaga/ReduxSagaPage';
 // import OutletPage from './views/router/OutletPage';
 // import PureComponentPage from './views/pureComponent/PureComponentPage';
 // import LifeCyclePage from './views/lifecycle/LifeCyclePage';
@@ -40,7 +41,7 @@ import ReactRouterPage from './views/router/ReactRouterPage';
 
 
 function App() {
-  const [activeNum, setActiveNum] = useState(0)
+  // const [activeNum, setActiveNum] = useState(0)
   return (
     <div className="App">
       {/* <SyntaxPage /> */}
@@ -54,7 +55,8 @@ function App() {
       {/* <ReactUseReducerPage /> */}
       {/* <Router6Page /> */}
       {/* <Router5Page /> */}
-      <ReactRouterPage />
+      {/* <ReactRouterPage /> */}
+      <ReduxSagaPage />
       {/* <RouteComponePage /> */}
       {/* <OutletPage /> */}
       {/* <PureComponentPage /> */}

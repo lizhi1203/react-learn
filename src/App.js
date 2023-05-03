@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import RefPage from './views/ref/RefPage';
 // import SyntaxPage from "./views/base/SyntaxPage";
 // import ClassComponent from './views/base/ClassComponent';
 // import FunctionComponent from './views/base/FunctionComponent';
@@ -13,7 +14,7 @@ import { useState } from 'react';
 // import RouteComponePage from './views/router/RouteComponePage';
 // import Router5Page from './views/router/Router5Page';
 // import ReactRouterPage from './views/router/ReactRouterPage';
-import ReduxSagaPage from './views/reduxSaga/ReduxSagaPage';
+// import ReduxSagaPage from './views/reduxSaga/ReduxSagaPage';
 // import OutletPage from './views/router/OutletPage';
 // import PureComponentPage from './views/pureComponent/PureComponentPage';
 // import LifeCyclePage from './views/lifecycle/LifeCyclePage';
@@ -56,7 +57,7 @@ function App() {
       {/* <Router6Page /> */}
       {/* <Router5Page /> */}
       {/* <ReactRouterPage /> */}
-      <ReduxSagaPage />
+      {/* <ReduxSagaPage /> */}
       {/* <RouteComponePage /> */}
       {/* <OutletPage /> */}
       {/* <PureComponentPage /> */}
@@ -82,6 +83,7 @@ function App() {
       {/* <AntdFormClassPage /> */}
       {/* <AntdFormFuncPage /> */}
       {/* <MyAntdFormClassPage /> */}
+      <RefPage />
     </div>
   );
 }
